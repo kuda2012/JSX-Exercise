@@ -7,7 +7,7 @@ const Person = (props) => {
   }
   let nameTruncated;
   if (props.name.length > 8) {
-    nameTruncated = props.name.slice(0, 7);
+    nameTruncated = props.name.slice(0, 6);
   } else {
     nameTruncated = props.name;
   }
