@@ -3,7 +3,7 @@ const App = () => {
     <div>
       <Person
         age={45}
-        name="Nini"
+        name="Alexander"
         hobbies={["kayaking", "swimming", "dancing"]}
       />
       <Person

@@ -1,9 +1,9 @@
 const Person = (props) => {
-  let moralSuggestion;
+  let suggestion;
   if (props.age >= 18) {
-    moralSuggestion = "please go Vote!";
+    suggestion = "please go Vote!";
   } else {
-    moralSuggestion = "you must be 18 to vote.";
+    suggestion = "you must be 18 to vote.";
   }
   let nameTruncated;
   if (props.name.length > 8) {
@@ -15,14 +15,14 @@ const Person = (props) => {
   return (
     <div>
       <div>
-        Learn some more information about this person: Name: {props.name}, Age:{" "}
-        {props.age}
+        Learn some more information about this person: Name: {nameTruncated},
+        Age: {props.age}
       </div>
       <div>
-        You are {props.age} years old, {moralSuggestion}
+        You are {props.age} years old, {suggestion}
       </div>
       <ul>
-        Here are some of this person's hobbies
+        Here are some of your hobbies
         {props.hobbies.map((hobby) => (
           <li>{hobby}</li>
         ))}
